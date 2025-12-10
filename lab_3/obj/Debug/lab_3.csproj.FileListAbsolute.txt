@@ -1,0 +1,7 @@
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_3\bin\Debug\lab_3.exe.config
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_3\bin\Debug\lab_3.exe
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_3\bin\Debug\lab_3.pdb
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_3\obj\Debug\lab_3.csproj.AssemblyReference.cache
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_3\obj\Debug\lab_3.csproj.CoreCompileInputs.cache
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_3\obj\Debug\lab_3.exe
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_3\obj\Debug\lab_3.pdb
