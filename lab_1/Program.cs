@@ -48,6 +48,8 @@ namespace lab_1
             Random random = new Random(Guid.NewGuid().GetHashCode());
             x_0 = random.Next(-99, 99);
             y_0 = random.Next(-99, 99);
+            x_1 = x_0 + radius;
+            y_1 = y_0;
         }
 
         //task_4
@@ -63,11 +65,12 @@ namespace lab_1
         //task_5
         public bool inter(Circle first, Circle second)
         {
+            const double eps = 1e-9;
             double den = first.denght(first, second);
             double r1 = first.get_radius();
             double r2 = second.get_radius();
 
-            return (den == (r1 + r2)) || (den == (r1 - r2));
+            return Math.Abs(den - (r1 + r2)) <= eps || Math.Abs(den - Math.Abs(r1 - r2)) <= eps;
         }
     }
 
@@ -84,15 +87,19 @@ namespace lab_1
             double RAD_0 = Convert.ToDouble(Console.ReadLine());
             if (RAD_0 <= 0)
             {
+                Console.BackgroundColor = ConsoleColor.Red;
                 Console.WriteLine("Радиус должен быть > 0");
+                Console.ResetColor();
                 return;
             }
             Circle circle_1 = new Circle(X_0, Y_0, RAD_0);
 
+            Console.WriteLine();
             Console.WriteLine("x0 = " + circle_1.x_0 + " y0 = " + circle_1.y_0);
             Console.WriteLine("x1 = " + circle_1.x_1 + " y1 = " + circle_1.y_1);
             Console.WriteLine("Длина окружности = " + circle_1.length());
             Console.WriteLine("Радиус окружности = " + circle_1.get_radius());
+            Console.WriteLine();
 
             Console.WriteLine("Введите X1: ");
             double X_1 = Convert.ToDouble(Console.ReadLine());
@@ -102,31 +109,47 @@ namespace lab_1
             double RAD_1 = Convert.ToDouble(Console.ReadLine());
             if (RAD_1 <= 0)
             {
+                Console.BackgroundColor = ConsoleColor.Red;
                 Console.WriteLine("Радиус должен быть > 0");
+                Console.ResetColor();
                 return;
             }
             Circle circle_2 = new Circle(X_1, Y_1, RAD_1);
 
+            Console.WriteLine();
             Console.WriteLine("X0 = " + circle_2.x_0 + " Y0 = " + circle_2.y_0);
             Console.WriteLine("X1 = " + circle_2.x_1 + " Y1 = " + circle_2.y_1);
             Console.WriteLine("Длина окружности = " + circle_2.length());
             Console.WriteLine("Радиус окружности = " + circle_2.get_radius());
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Расстояние между окружностями = " + circle_1.denght(circle_1, circle_2));
             Console.WriteLine("Касаются ли окружности: " + circle_1.inter(circle_1, circle_2));
+            Console.ResetColor();
+            Console.WriteLine();
 
             //task_2
             circle_1.change_start();
-            Console.WriteLine("x0 = " + circle_1.x_0 + " y0 = " + circle_1.y_0);
-            Console.WriteLine("x1 = " + circle_1.x_1 + " y1 = " + circle_1.y_1);
-            Console.WriteLine("Длина окружности = " + circle_1.length());
-            Console.WriteLine("Радиус окружности = " + circle_1.get_radius());
 
-            circle_1.change_start();
+            Console.WriteLine();
             Console.WriteLine("x0 = " + circle_1.x_0 + " y0 = " + circle_1.y_0);
             Console.WriteLine("x1 = " + circle_1.x_1 + " y1 = " + circle_1.y_1);
             Console.WriteLine("Длина окружности = " + circle_1.length());
             Console.WriteLine("Радиус окружности = " + circle_1.get_radius());
+            Console.WriteLine();
+
+            circle_2.change_start();
+
+            Console.WriteLine();
+            Console.WriteLine("x0 = " + circle_2.x_0 + " y0 = " + circle_2.y_0);
+            Console.WriteLine("x1 = " + circle_2.x_1 + " y1 = " + circle_2.y_1);
+            Console.WriteLine("Длина окружности = " + circle_2.length());
+            Console.WriteLine("Радиус окружности = " + circle_2.get_radius());
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Расстояние между окружностями = " + circle_1.denght(circle_1, circle_2));
+            Console.WriteLine("Касаются ли окружности: " + circle_1.inter(circle_1, circle_2));
+            Console.ResetColor();
             Console.WriteLine("-------------------------------------");
+            Console.WriteLine();
         }
     }
 }

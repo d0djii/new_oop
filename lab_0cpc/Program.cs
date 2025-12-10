@@ -74,13 +74,20 @@ namespace lab_0cpc
 
     }
 
-        internal class Program
+
+    internal class Program
     {
         static void Main(string[] args)
         {
+
+            /*Student student = new Student();
+            student.Name = "Bebra";
+            student.StudentId = 1;
+            student.Group = "ФИЛ91б";
+            student.PrintInfo();*/
+
             Student jhny = new Student("John", 33, "ПИ41б");
             Student alx = new Student("Леха", 34, "1521б");
-
             jhny.group = "idk";
             //alx.studentid = -1; //Необработанное исключение: System.ArgumentException: ID должен быть > 0
             alx.studentid = 2;
@@ -91,10 +98,11 @@ namespace lab_0cpc
             BankAccount bank = new BankAccount("32132b", 1000);
 
             bank.Deposit(1);
+            //bank.Deposit(-1);    //Необработанное исключение: System.ArgumentException: Мало
             bank.Withdraw(1000);
             //bank.Withdraw(1002); //Необработанное исключение: System.ArgumentException: Недостаточно средств
             bank.PrintStatement(); //Банк: Сберегательный Банк, Счет: 32132b, Баланс: 1
-
+            
 
         }
     }

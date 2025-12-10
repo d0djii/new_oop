@@ -472,6 +472,7 @@ namespace lab_0
             Fib_task_16(0, 1, 1, number);
             //¯\_(ツ)_/¯
             //P.S. У меня все считает, довести до стаковерфлоу можно, но с 47 уже не правильно начинает выводить (по-моему)
+            //Process is terminated due to StackOverflowException. 10000
         }
         static void Fib_task_16(int a, int b, int counter, int number)
         {
