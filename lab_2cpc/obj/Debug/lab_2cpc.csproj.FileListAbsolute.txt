@@ -1,0 +1,7 @@
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2cpc\bin\Debug\lab_2cpc.exe.config
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2cpc\bin\Debug\lab_2cpc.exe
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2cpc\bin\Debug\lab_2cpc.pdb
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2cpc\obj\Debug\lab_2cpc.csproj.AssemblyReference.cache
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2cpc\obj\Debug\lab_2cpc.csproj.CoreCompileInputs.cache
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2cpc\obj\Debug\lab_2cpc.exe
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2cpc\obj\Debug\lab_2cpc.pdb

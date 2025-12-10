@@ -1,0 +1,7 @@
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2\bin\Debug\lab_2.exe.config
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2\bin\Debug\lab_2.exe
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2\bin\Debug\lab_2.pdb
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2\obj\Debug\lab_2.csproj.AssemblyReference.cache
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2\obj\Debug\lab_2.csproj.CoreCompileInputs.cache
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2\obj\Debug\lab_2.exe
+C:\Users\dodjii\Documents\GitHub\new_oop\lab_2\obj\Debug\lab_2.pdb
